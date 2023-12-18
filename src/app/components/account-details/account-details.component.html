@@ -1,0 +1,11 @@
+<h2>Account Details</h2>
+<div *ngIf="account">
+    <p>Account Number: {{ account.accountNumber }}</p>
+    <p>Account Holder Name: {{ account.accountHolderName }}</p>
+    <p>Phone Number: {{ account.phoneNumber }}</p>
+    <p>Available Balance: {{ account.availableBalance }}</p>
+    <div>
+        <button (click)="goToTransactions()">View Transactions</button>
+        <button (click)="goToBeneficiaries()">Manage Beneficiaries</button>
+    </div>
+</div>
